@@ -1,0 +1,105 @@
+/* Colors: #02b3e4
+					 #2d3c49
+					 #7d97ad */
+
+/* Default CSS classes */
+
+h2 {
+	font-size: 1.8rem;
+	color: #7d97ad;
+	font-weight: 400;
+	text-indent: 10px
+}
+
+img {
+	width: 100%
+}
+
+/* End of default CSS classes */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5rem;
+	color: #2d3c49;
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 4px solid #7d97ad;
+	align-items: center;
+}
+
+header img {
+	width: auto
+}
+
+header h1 {
+	font-size: 1.7rem;
+	margin-bottom: 0;
+	font-weight: 100
+}
+
+header article {
+	text-align: right;
+	margin-top: 0.625rem;
+	text-transform: uppercase;
+}
+
+header p {
+	font-size: 1rem;
+}
+
+.featured-work {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	list-style: none;
+	padding-left: 0;
+}
+
+.featured-work--item {
+	width: 100%;
+	text-align: center;
+	margin-right: 0;
+}
+
+.featured-work--item:nth-child(3n) {
+	margin-right: 0
+}
+
+.featured-work--item h3 {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+	header h1 {
+		font-size: 3rem;
+	}
+	header p {
+		font-size: 1.7rem;
+	}
+}
+
+
+@media screen and (min-width: 1000px) {
+	.featured-work--item {
+		margin-right: 1.25rem;
+	}
+	.featured-work {
+		flex-direction: row;
+	}
+	.featured-work--item {
+		width: 33.3%;
+	}
+	.featured-work--item h3 {
+		font-size: 2rem;
+	}
+}
